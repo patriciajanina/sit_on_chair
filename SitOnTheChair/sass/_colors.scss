@@ -1,0 +1,44 @@
+.part1{
+background: rgba(255,255,255,1);
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
+}
+$colors: ( mainColor: #3CB496,
+           gey: #cfcfcf ,
+           boxwhite:#FEFCFB, );
+ .textColor{
+ color: map-get($colors, mainColor);}
+ .part1 input{
+ background-color: map-get($colors, mainColor);}
+ .greenLine , .greenLine1{
+ color: map-get($colors, mainColor);}
+ .greenLinePart3{
+ color: map-get($colors, mainColor);}
+.part3 , .part4 , .priceBoxes{
+background-color: map-get($colors, gey);}
+.priceBox1{
+  background-color: map-get($colors, boxwhite);
+}
+.priceBox1 .boxName{
+  color: map-get($colors, mainColor);
+}
+.priceBox2{
+  background-color: map-get($colors, mainColor);
+}
+.priceBox2 .wheel{
+  background-color: map-get($colors, mainColor);
+}
+.priceBox2 .wheel .smallWheel{
+  background-color: map-get($colors, boxwhite);
+}
+.priceBox2 .boxName{
+  color: map-get($colors, boxwhite);
+}
+.priceBox2 .textBox{
+  background-color: map-get($colors, boxwhite);
+}

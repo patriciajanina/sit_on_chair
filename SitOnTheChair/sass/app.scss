@@ -1,0 +1,334 @@
+@import "colors";
+@import "fonts";
+%placeholder{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+body{
+font-family: 'open_sanslight';
+}
+header{
+  @extend %placeholder;
+  overflow: hidden;
+}
+.part{
+  background: black;
+  display: flex;
+  color:white;
+  justify-content: space-between;
+.toLeft{
+  display: flex;
+  justify-content: flex-end;
+}
+}
+.sighn{
+  font-family: 'entyporegular';
+  font-size:80px;
+  color:#3CB496;
+}
+
+.lista1 , .lista2 , .lista3{
+  width: 80px;
+  height: 90px;
+  background: black;
+  color: white;
+  margin-top: 25px;
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+.section2{
+  @extend %placeholder;
+  display: none;
+}
+.nonestyle{
+  list-style: none;
+  padding: 10px 10px 10px 10px;
+  margin-top: 10px;
+}
+.left{
+  margin-left: 25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.right{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.section1{
+  @extend %placeholder;
+  display: flex;
+}
+.part1 {
+  display: flex;
+  align-items: center;
+}
+.textSection{
+  @extend %placeholder;
+  text-align: center;
+  margin-right: 5%;
+  margin-left: 1%;
+  overflow: hidden;
+  justify-content: flex-end;
+}
+.textSection h1{
+  font-size: 45px;
+}
+.textSection p{
+  font-size: 20px;
+  color: silver;
+}
+.textSection input{
+  width: 200px;
+  height: 30px;
+  border-radius: 10px 10px 10px 10px;
+  border-style:none;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color:white;
+}
+.picSection{
+  display: flex;
+  justify-content: flex-start;
+}
+.picSection img{
+  margin-left: 3%;
+}
+.boxPic{
+ border: 1px solid #cfcfcf;
+ width: 300px;
+ height: 200px;
+}
+.part2{
+  @extend %placeholder;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+.secondPic , .firstPic{
+  border: 1px solid #cfcfcf;
+  width: 300px;
+  height: 200px;
+}
+.glue{
+  display:block;
+}
+.whiteOpacity{
+  width: 100%;
+  height: 25%;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: relative;
+  bottom:40%;
+}
+%lineholder{
+  border: 3px solid;
+  width: 40%;
+}
+.greenLine{
+  @extend %lineholder;
+  bottom: 55%;
+  margin-left: 5%;
+}
+.greenLine1{
+  @extend %lineholder;
+  top: 10%;
+}
+.textOnPic , .greenLine{
+  position: relative;
+  bottom:60%;
+  margin-left: 5%;
+}
+.textOnPic1 , .greenLine1{
+  position: relative;
+  top: 10%;
+  margin-left: 5%;
+}
+.textPart2{
+  text-align: center;
+  margin-top: 15%;
+}
+.part3 , .part6{
+  @extend %placeholder;
+  margin-top: 4%;
+}
+.greenLinePart3{
+   border: 3px solid;
+   width: 25%;
+}
+
+.priceBoxes {
+  @extend %placeholder;
+  border:1px solid #cfcfcf;
+}
+.part4{
+  display: flex;
+  justify-content: space-between;
+}
+.marginPart4{
+  border: 1px solid #cfcfcf;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.priceBox1 , .priceBox2{
+  border: 1px solid #cfcfcf;
+  width: 300px;
+  // display: flex;
+  // text-align: center;
+  // flex-direction: column;
+  // align-items: center;
+
+}
+.boxName{
+  font-size: 20px;
+  text-align: center;
+}
+.wheel{
+  border: 1px solid #cfcfcf;
+  width: 60px;
+  height: 60px;
+  border-radius: 60%;
+  position: relative;
+  top:-25px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.priceBox2 .wheel{
+  border: 1px solid #3CB496;
+}
+.priceBox2 input {
+  border-radius: 5px 5px 5px 5px;
+  color: #3CB496;
+  background: white;
+  border-style: none;
+  width: 30%;
+  margin-bottom: 2%;
+  display:flex;
+   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.priceBox1 input{
+  border-radius: 5px 5px 5px 5px;
+  color: white;
+  background: #3CB496;
+  border-style: none;
+  width: 30%;
+  margin-bottom: 2%;
+  display:flex;
+   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.smallWheel{
+  border: 1px solid #cfcfcf;
+  width: 30px;
+  height: 30px;
+  background: #cfcfcf;
+  border-radius: 60%;
+}
+.textBox{
+  border: 1px solid #cfcfcf;
+  width: 90px;
+  height: 90px;
+  border-radius: 60%;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textBox h1{
+  font-size: 25px;
+  color: grey;
+}
+.textBox p{
+  color: grey;
+}
+.priceBox2 .textBox h1 , .priceBox2 .textBox p {
+  color: #3CB496;
+}
+
+.downBox{
+  width: 100%;
+  height: 110px;
+  color: grey;
+}
+.priceBox2 .downBox{
+  width: 98%;
+border: 3px solid #3CB496;
+color:grey;
+}
+.textBox1{
+  background: silver;
+  text-align: center;
+}
+.textBox2{
+  background: #cfcfcf;
+  text-align: center;
+}
+.textBox3{
+  background:white;
+  text-align: center;
+}
+.part5{
+  @extend %placeholder;
+  display: flex;
+}
+.form{
+  width: 70%;
+  height: 300px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.part6 .greenLinePart3{
+  margin-bottom: 2%;
+}
+.input1 , .input2 , .input3{
+  width: 100%;
+  margin-top: 1%;
+  color: silver;
+  font-size: 20px;
+}
+.send{
+  display: column;
+  text-align: center;
+}
+.sendInput{
+  width: 70%;
+  font-size: 25px;
+  margin-top: 15%;
+  border-radius: 3px 3px 3px 3px;
+  border-style: none;
+  background: #3CB496;
+  color: white;
+}
+footer{
+  @extend %placeholder;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  color: grey;
+}
+.logos{
+  margin-right: -25%;
+}
+.tick{
+  color: grey;
+}
+.section2 .textColor{
+  color: #c19e67;
+}
+.section2 input{
+  background:  #c19e67;
+}
